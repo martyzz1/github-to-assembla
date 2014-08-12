@@ -22,7 +22,7 @@ N.B. If you wish to preserve the Original creator of tickets (issues) and commen
 Now run the *print_users.py*
 Use it's output to build your usermap Dictionary in the *migrate_issues.py* script.
 
-Once you've set this up, you can run the *migrate_issues.py* and import all your issues, and tag them with the repo name they came from. USeful if migrating issues from multiple repos to one assembla space.
+Once you've set this up, you can run the *migrate_issues.py* and import all your issues, and tag them with the repo name they came from. Useful if migrating issues from multiple repos to one assembla space.
 
 
 
