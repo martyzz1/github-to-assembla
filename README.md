@@ -25,4 +25,4 @@ Use it's output to build your usermap Dictionary in the *migrate_issues.py* scri
 Once you've set this up, you can run the *migrate_issues.py* and import all your issues, and tag them with the repo name they came from. Useful if migrating issues from multiple repos to one assembla space.
 
 
-
+**N.B. you may need to install my assembla.py fork if the pullrequest for Tags and commenting isn't merged yet.  Get it here  https://github.com/martyzz1/assembla or pip install -e git://github.com/martyzz1/assembla.git@HEAD#egg=assembla-dev**
