@@ -126,12 +126,6 @@ if __name__ == "__main__":
         for ic in issue_comments:
             if len(ticketcomments) > count + 1:
                 tc = ticketcomments[count + 1]
-                print tc['created_on']
-                print tc['ticket_changes']
-                print tc['updated_at']
-                print tc['ticket_id']
-                print tc['id']
-                print tc['user_id']
                 if tc['comment'] == ic.body:
                     pass
                 else:
