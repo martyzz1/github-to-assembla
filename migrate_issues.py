@@ -51,19 +51,6 @@ def get_assembla_issues(my_space):
     return existing
 
 
-def get_user_info(gh, my_space):
-    """
-    Use this to help you extract the github users and assembla users, so you can setup the usermap
-    """
-    users = my_space.users()
-    for user in users:
-        print user['id'], user['login']
-
-    repo = gh.repository(GITHUB_AUTHOR, GITHUB_REPO)
-    for user in repo.iter_assignees():
-        print user.login
-
-
 def get_github_issues(gh):
     gissues = gh.iter_repo_issues(GITHUB_AUTHOR, GITHUB_REPO, state='open')
 
@@ -81,7 +68,6 @@ def get_assembla_user_id(github_login):
 
 if __name__ == "__main__":
 
-    #get_user_info(gh, my_space)
     gh_issues = get_github_issues(gh)
     my_space = assembla.spaces(name=ASSEMBLA_SPACE)[0]
     tags = my_space.tags()
